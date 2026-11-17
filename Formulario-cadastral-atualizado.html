@@ -1,0 +1,120 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário cadastral</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1><strong>Formulário de cadastro</h1></strong>
+    </header>
+
+    <section>
+        <h2>Faça seu cadastro no VetZuli para receber dicas diárias de como cuidar do seu pet.<br>
+            Dê seus detalhes para que possamos melhor orientá-lo!<br>
+        </h2>
+
+         <img 
+          src="imagem-pets.jpg" 
+          alt="Imagem com pets um ao lado do outro tranquilos. Um cão de porte maior marrom e branco. Um cão de porte pequeno marrom escuro. Um poodle marrom claro. Um leitão preto. Um gato frajola. Um gato cinza de olhos laranja. Um cãozinho de porte P marrom com preto" 
+          class="foto-destaque"
+        
+    </section>
+
+    <main>
+       <p><h3>Dados do tutor</h3></p>
+
+       <form>
+         <p>
+          <label for="nome-visitante">Nome do tutor:</label>
+          <input type="text" id="nome-visitante" placeholder="Digite seu nome" required>
+        </p>
+
+        <p>
+        <label for="telefone">Telefone:</label>
+        <input type="telefone" id="telefone" placeholder="Ex: (41 99999-9999)" required>
+        </p>
+
+        <p>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="Ex: cassia.maria01@gmail.com" required>
+        </p>
+
+          <p>
+            <label for="senha">Senha: </label>
+            <input type="password" id="senha" required>
+        </p>
+
+        <!-- Exemplo de CHECKBOX (Escolha MÚLTIPLA - Novidade!) -->
+        <fieldset>
+          <legend>Marque quais pets você tem:</legend>
+
+          <input type="checkbox" id="check1" name="interesses" value="item1">
+          <label for="check1">Gato</label><br>
+
+          <input type="checkbox" id="check2" name="interesses" value="item2">
+          <label for="check2">Cachorro</label><br>
+
+          <input type="checkbox" id="check3" name="interesses" value="item3">
+          <label for="check3">Pássaro</label><br>
+
+          
+          <input type="checkbox" id="check4" name="interesses" value="item4">
+          <label for="check4">Peixe</label><br>
+
+          
+          <input type="checkbox" id="check5" name="interesses" value="item5">
+          <label for="check5">Roedor</label><br>
+
+        </fieldset>
+
+          <!-- Exemplo de RADIO (Escolha ÚNICA) -->
+        <fieldset>
+            <legend>Marque uma opção:</legend>
+          
+          <input type="radio" id="op1" name="favorito" value="opcao1">
+          <label for="op1">Quero receber e-mails e mensagens pelo WhatsApp</label><br>
+
+          <input type="radio" id="op2" name="favorito" value="opcao2">
+          <label for="op2">Quero receber apenas e-mail</label><br>
+
+           <input type="radio" id="op2" name="favorito" value="opcao2">
+          <label for="op2">Quero receber apenas mensagens pelo WhatsApp</label><br>
+        </fieldset>
+
+
+       </form>
+
+        <p><h3>Dados do pet</h3></p>
+
+        <form>
+
+        <p>
+          <label for="nome-pet">Nome do pet:</label>
+          <input type="text" id="nome-visitante" placeholder="Digite o nome do pet" required>
+        </p>
+
+         <p>
+          <label for="idade-pet">Idade do pet:</label>
+          <input type="number" id="idade-pet" placeholder="Digite a idade do pet" required>
+        </p>
+        
+        <p>
+          <label for="raca-pet">Raça do pet:</label>
+          <input type="text" id="raca-pet" placeholder="Digite a raça do pet" >
+        </p>
+
+        </form>
+
+        <button type="submit">Enviar</button>
+
+    </main>
+
+    <footer> 
+        <h5>
+            <p>Atividade de fixação de CSS - 2026</p>
+        </h5>
+    </footer>
+</body>
+</html>
